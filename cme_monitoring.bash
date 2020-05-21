@@ -38,6 +38,17 @@ then
 	echo "Publishing changes"
 		mgmt_cli publish --session-id $SID
 		
+	echo "Install policy"
+		until [[ $INSTALL_STATUS != 1 ]]; do
+			mgmt_cli --session-id $SID -f json install-policy policy-package $POLICY_PACKAGE_NAME targets $GW_UID
+			INSTALL_STATUS=$?
+		done
+		
+	echo "Policy Installed" 
+
+        echo "Logging out of session"
+        mgmt_cli logout --session-id $SID
+			
 		exit 0
 fi
 
