@@ -23,7 +23,7 @@ then
 	exit 0
 fi
 
-if [[ $AUTOPROV_ACTION == MONITORING ]]
+if [[ $CUSTOM_PARAMETERS == MONITORING ]]
 then
 
 	echo "Connection to API server"
@@ -40,3 +40,5 @@ then
 		
 		exit 0
 fi
+
+exit 0
