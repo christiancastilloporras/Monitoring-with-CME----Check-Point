@@ -26,6 +26,10 @@ fi
 if [[ $CUSTOM_PARAMETERS == MONITORING ]]
 then
 
+INSTALL_STATUS=1
+POLICY_PACKAGE_NAME="azureinbound-RB"
+## only static parameter put the policy name still trying to find the way to grab it##
+
 	echo "Connection to API server"
 	SID=$(mgmt_cli -r true login -f json | jq -r '.sid')
 	GW_JSON=$(mgmt_cli --session-id $SID show simple-gateway name $GW_NAME -f json)
