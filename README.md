@@ -22,4 +22,4 @@ Enable the parameter to launch the script, in this case the bash is looking for 
   
 Whit this everytime the Gateway is launched it send a command and this will launch 
 
-**NOTE a variable called PolicyName need to be adequated to your policy.
+**NOTE a variable called POLICY_PACKAGE_NAME= need to be adequated to your policy.
