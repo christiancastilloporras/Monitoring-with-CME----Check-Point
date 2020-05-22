@@ -21,3 +21,5 @@ Enable the parameter to launch the script, in this case the bash is looking for 
   - autoprov-cfg set template -tn <nameoftemplate> -cp MONITORING
   
 Whit this everytime the Gateway is launched it send a command and this will launch 
+
+**NOTE a variable called PolicyName need to be adequated to your policy.
