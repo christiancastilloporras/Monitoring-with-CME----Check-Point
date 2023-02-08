@@ -7,7 +7,7 @@ Needs to be run in Autoprovision template with "MONITORING" as a custom paramete
 ------- No supported in production -------
 '
 
-. /var/opt/CPshrd-R80.40/tmp/.CPprofile.sh
+. /opt/CPshared/5.0/tmp/.CPprofile.sh
 
 AUTOPROV_ACTION=$1
 GW_NAME=$2
